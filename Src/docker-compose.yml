@@ -1,0 +1,27 @@
+# build for freshmanproject
+version: "3.9" 
+services:
+  my-project:
+    restart: on-failure
+    # build from specific image
+    image : tony/ros2:humble
+    volumes:
+      - /home/tony/2ROS2workspace/ROS2_FreshmanProject:/home/tony/1Projects/FreshmanProject/Src/ROS2_FreshmanProject
+      - /home/tony/2ROS2workspace/freshmanproject_interface:/home/tony/1Projects/FreshmanProject/Src/freshmanproject_interface
+      - /dev:/dev
+      # function along with"- DISPLAY=unix$DISPLAY" to enable Qt 
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    networks:
+      - default
+    container_name: FreshmanProject
+    hostname: "FreshmanProject"
+    user: root
+    working_dir: /root/2ROS2workspace
+    ports:
+      - 8000:8000
+#   同时通过 tailf 命令保持 container 不要退出的状态
+    command:
+      bash -c "tail -f /dev/null"
+    environment:
+      - DISPLAY=unix$DISPLAY
+
