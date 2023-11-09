@@ -4,7 +4,7 @@
 #include "USER_main.h"
 #include "usart.h"
 #include "Serial_Servo.h"
-#define SERVO_NUM 6
+#define SERVO_NUM 4
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -47,7 +47,7 @@ static void Servos_ReadPos();
 void StartDefaultTask(void *argument);
 
 
-const int16_t bis[SERVO_NUM] = {800,1155,400,700,0,0};
+const int16_t bis[6] = {800,1155,400,700,0,0};
 Serial_Servo * Servo[SERVO_NUM];
 
 //定时器回调函数，用于发布消息
@@ -55,12 +55,12 @@ void timer1_callback(rcl_timer_t *timer, int64_t last_call_time)
 {
 //    stm_time.data = (int32_t)xTaskGetTickCount();
 //    rcl_publish(&stm_time_publisher, &stm_time, NULL);
-    if(xSemaphoreTake(data_mutex, 70/portTICK_RATE_MS)==pdTRUE)
-    {
+    if (xSemaphoreTake(data_mutex, 100 / portTICK_RATE_MS) == pdTRUE){
         rcl_publish(&pos_feedback_publisher, &pos_feedback, NULL);
-        rcl_publish((&angle_feedback_publisher), &angle_feedback, NULL);
         xSemaphoreGive(data_mutex);
-    }
+        rcl_publish((&angle_feedback_publisher), &angle_feedback, NULL);
+    } else {
+        return;}
 }
 
 //接收回调函数
@@ -85,13 +85,17 @@ void pos_cmd_subCallback(const void *msgin) {
 
 void StartControllerTask(void *argument)
 {
+    xSemaphoreTake(sync_mutex, portMAX_DELAY);
+    vTaskDelay(10);
+    xSemaphoreGive(sync_mutex);
+
 
     const uint16_t dt = 100 ;
     //Mpu6050 * mpu1 = Mpu6050_Create(&hi2c1,0,Afsr_2g,Gfsr_250LSB,100);
 //    while (Mpu6050_Init(mpu1)!=0)
 //    {
 //        HAL_GPIO_TogglePin(LDR_GPIO_Port,LDR_Pin);
-//        osDelay(1000);
+//        vTaskDelay(1000);
 //    }
     HAL_GPIO_WritePin(LDR_GPIO_Port,LDR_Pin,GPIO_PIN_SET);
     for (int i = 0; i < SERVO_NUM; i++) {
@@ -100,11 +104,11 @@ void StartControllerTask(void *argument)
         Serial_Servo_Set_Mode(Servo[i],0);
         int8_t s=1;
         do {
-            osDelay(1);
+            vTaskDelay(1);
             s=Serial_Servo_ReadPosition(Servo[i]);
             if(s==-1){
                 HAL_GPIO_TogglePin(LDR_GPIO_Port,LDR_Pin);
-                osDelay(100);
+                vTaskDelay(20/ portTICK_RATE_MS);
             }
 
         } while (s);
@@ -112,35 +116,37 @@ void StartControllerTask(void *argument)
     }
     HAL_GPIO_WritePin(LDR_GPIO_Port,LDR_Pin,GPIO_PIN_SET);
     Serial_Servo_SetLimit(Servo[0],0,1000);
-    osDelay(5);
+    vTaskDelay(5);
     Serial_Servo_SetLimit(Servo[1],0,1000);
-    osDelay(5);
+    vTaskDelay(5);
     Serial_Servo_SetLimit(Servo[2],0,1000);
-    osDelay(5);
+    vTaskDelay(5);
     Serial_Servo_SetLimit(Servo[3],0,1000);
-    osDelay(5);
+    vTaskDelay(5);
 //    Serial_Servo_Move(Servo[0],350,3000);
-//    osDelay(1000);
+//    vTaskDelay(1000);
 //    Serial_Servo_Move(Servo[1],440,3000);
 //    Serial_Servo_Move(Servo[2],440,3000);
 //    Serial_Servo_Move(Servo[3],452,3000);
-//    osDelay(4000);
-    Serial_Servo_Move(Servo[0],640,3000);
-    Serial_Servo_Move(Servo[1],800,3000);
-    Serial_Servo_Move(Servo[2],625,3000);
-    Serial_Servo_Move(Servo[3],450,3000);
-    osDelay(3000);
+//    vTaskDelay(4000);
+    //    Serial_Servo_Move(Servo[0],640,3000);
+    //    Serial_Servo_Move(Servo[1],800,3000);
+    //    Serial_Servo_Move(Servo[2],625,3000);
+    //    Serial_Servo_Move(Servo[3],450,3000);
     //uint32_t  PreviousWakeTime = osKernelSysTick();
-    while (1)
+    for(;;)
     {
         Servos_ReadPos();
+        if (xSemaphoreTake(data_mutex, 100 / portTICK_RATE_MS) == pdTRUE){
         for(int i=0;i<SERVO_NUM;i++){
             pos_feedback.data.data[i]=filter(pos_feedback.data.data[i],Servo[i]->currentPostion,400);
             //servoPos[i]=Servo[i]->currentPostion;
         }
+            xSemaphoreGive(data_mutex);
+        } else{
+            continue;}
         //    Mpup6050_update(mpu1);
-
-        osDelayUntil(dt);
+        vTaskDelay(dt/portTICK_RATE_MS);
     }
 
 }
@@ -244,7 +250,7 @@ void StartDefaultTask(void *argument) {
             ON_NEW_DATA);
 
     rclc_executor_add_timer(&executor, &timer1);
-    osDelay(300);
+    vTaskDelay(300);
 // 为数组型的msg分配空间
     pos_feedback.data.capacity=SERVO_NUM;
     pos_feedback.data.size=SERVO_NUM;
@@ -256,7 +262,7 @@ void StartDefaultTask(void *argument) {
     pos_cmd.data.size=SERVO_NUM;
     pos_cmd.data.data=(float *)pvPortMalloc(SERVO_NUM*sizeof(float));
     xSemaphoreGive(sync_mutex);
-    osDelay(10);
+    vTaskDelay(10);
     xSemaphoreTake(sync_mutex, portMAX_DELAY);
     rclc_executor_spin(&executor);
     for (;;) {}
@@ -271,34 +277,6 @@ void StartDefaultTask(void *argument) {
  * 方向：右手定则x->y为增大方向
  */
 
-
-
-void __(void *argument)
-{
-    int16_t targetPos[SERVO_NUM]={640,800,625,450};
-    int16_t temp[SERVO_NUM]={0};
-    while (1)
-    {
-        //Serial_Servo_Stop(Servo[3]);
-//        BaseType_t state = xQueueReceive(targetPosQueue,temp,5000);
-//        if(state == pdPASS) {
-//            for (int i = 0; i < SERVO_NUM; i++) {
-//                if (temp[i] != targetPos[i]) {
-//                    targetPos[i] = temp[i];
-//                    //Serial_Servo_Move(Servo[i],limit(targetPos[i],0,1000),4*dt);
-//                    if(i==3){
-//                        HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-//                        printf("2\n");
-//                        Serial_Servo_Move(Servo[3],targetPos[3], dt);
-//                    }
-//                }
-//            }
-//           // printf("targetPos[%d]:%d\n", 3, targetPos[3]);
-//        }
-//        osDelay(4*dt);
-        //printf("servoMoveTaskHandle %d\n",(int)uxTaskGetStackHighWaterMark(servoMoveTaskHandle));
-    }
-}
 
 void Servos_ReadPos(){
     for (int i = 0; i < SERVO_NUM; i++) {

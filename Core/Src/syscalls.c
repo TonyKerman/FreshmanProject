@@ -10,7 +10,7 @@
  ******************************************************************************
  * @attention
  *
- * Copyright (c) 2020-2022 STMicroelectronics.
+ * Copyright (c) 2020-2023 STMicroelectronics.
  * All rights reserved.
  *
  * This software is licensed under terms that can be found in the LICENSE file
@@ -87,6 +87,42 @@ __attribute__((weak)) int _write(int file, char *ptr, int len)
     __io_putchar(*ptr++);
   }
   return len;
+}
+
+int _close(int file)
+{
+  (void)file;
+  return -1;
+}
+
+
+int _fstat(int file, struct stat *st)
+{
+  (void)file;
+  st->st_mode = S_IFCHR;
+  return 0;
+}
+
+int _isatty(int file)
+{
+  (void)file;
+  return 1;
+}
+
+int _lseek(int file, int ptr, int dir)
+{
+  (void)file;
+  (void)ptr;
+  (void)dir;
+  return 0;
+}
+
+int _open(char *path, int flags, ...)
+{
+  (void)path;
+  (void)flags;
+  /* Pretend like we always fail */
+  return -1;
 }
 
 int _wait(int *status)
