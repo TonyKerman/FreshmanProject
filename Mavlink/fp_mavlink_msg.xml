@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<mavlink>
+  <version>3</version>
+  <enums>
+  <enum name="ARM_MODE">
+    <description>机械臂工作模式</description>
+    <entry value="0" name="DISABLE">
+      <description>收起</description>
+    </entry>
+    <entry value="1" name="ENABLE">
+      <description>打开</description>
+    </entry>
+
+  </enum>
+  </enums>
+  <messages>
+    <message id="1" name="CMD">
+      <description>上位机命令</description>
+      <field type="uint8_t" name="mod" enum="ARM_MODE">模式</field>
+      <field type="float[4]" name="servo_pos">y 舵机目标位置（仅ENABLE时可用）</field>
+      <field type="int16_t[2]" name="target">目标在相机中相对图像·中心的x,y位置</field>
+    </message>
+    <message id="2" name="GYRO">
+      <description>陀螺仪数据</description>
+      <field type="float" name="roll">x 方向角弧度</field>
+      <field type="float" name="pith">y 方向角弧度</field>
+    </message>
+    <message id="3" name="SERVO_FDB">
+      <description>陀螺仪数据</description>
+      <field type="float[6]" name="servo_pos">y 舵机位置</field>
+    </message>
+  </messages>
+</mavlink>

@@ -1,0 +1,56 @@
+{
+    "frameEnd": "",
+    "frameStart": "",
+    "groups": [
+        {
+            "datasets": [
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 1024,
+                    "graph": true,
+                    "led": false,
+                    "log": false,
+                    "max": 0,
+                    "min": 0,
+                    "title": "Gyro Roll",
+                    "units": "°",
+                    "value": "%1",
+                    "widget": "roll"
+                },
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 1024,
+                    "graph": true,
+                    "led": false,
+                    "log": false,
+                    "max": 0,
+                    "min": 0,
+                    "title": "Gyro Pitch",
+                    "units": "°",
+                    "value": "%2",
+                    "widget": "pitch"
+                },
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 1024,
+                    "graph": false,
+                    "led": false,
+                    "log": false,
+                    "max": 0,
+                    "min": 0,
+                    "title": "Gyro Yaw",
+                    "units": "°",
+                    "value": "%3",
+                    "widget": "yaw"
+                }
+            ],
+            "title": "Gyroscope",
+            "widget": "gyro"
+        }
+    ],
+    "separator": "",
+    "title": "Freshman"
+}

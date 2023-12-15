@@ -1,0 +1,3 @@
+/home/tony/2STM32workspace/projects/FreshmanProject-stm32/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir
+/home/tony/2STM32workspace/projects/FreshmanProject-stm32/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tony/2STM32workspace/projects/FreshmanProject-stm32/cmake-build-debug/CMakeFiles/rebuild_cache.dir

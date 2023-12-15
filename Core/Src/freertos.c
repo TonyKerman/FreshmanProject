@@ -25,7 +25,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "USER_main.h"
 #include "semphr.h"
 /* USER CODE END Includes */
 
@@ -49,19 +48,19 @@
 SemaphoreHandle_t data_mutex;
 SemaphoreHandle_t sync_mutex;
 /* USER CODE END Variables */
-/* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
-const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .stack_size = 3000 * 4,
+/* Definitions for servoTask */
+osThreadId_t servoTaskHandle;
+const osThreadAttr_t servoTask_attributes = {
+  .name = "servoTask",
+  .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
-/* Definitions for controllerTask */
-osThreadId_t controllerTaskHandle;
-const osThreadAttr_t controllerTask_attributes = {
-  .name = "controllerTask",
-  .stack_size = 256 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+/* Definitions for sensorTask */
+osThreadId_t sensorTaskHandle;
+const osThreadAttr_t sensorTask_attributes = {
+  .name = "sensorTask",
+  .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityLow,
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -69,8 +68,8 @@ const osThreadAttr_t controllerTask_attributes = {
 
 /* USER CODE END FunctionPrototypes */
 
-void StartDefaultTask(void *argument);
-void StartControllerTask(void *argument);
+void StartServoTask(void *argument);
+void StartSensorTask(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -91,7 +90,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
     data_mutex = xSemaphoreCreateMutex();
-    sync_mutex = xSemaphoreCreateBinary();
+    sync_mutex = xSemaphoreCreateMutex();
   /* USER CODE END RTOS_SEMAPHORES */
 
   /* USER CODE BEGIN RTOS_TIMERS */
@@ -103,11 +102,11 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+  /* creation of servoTask */
+  servoTaskHandle = osThreadNew(StartServoTask, NULL, &servoTask_attributes);
 
-  /* creation of controllerTask */
-  controllerTaskHandle = osThreadNew(StartControllerTask, NULL, &controllerTask_attributes);
+  /* creation of sensorTask */
+  sensorTaskHandle = osThreadNew(StartSensorTask, NULL, &sensorTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -119,40 +118,40 @@ void MX_FREERTOS_Init(void) {
 
 }
 
-/* USER CODE BEGIN Header_StartDefaultTask */
+/* USER CODE BEGIN Header_StartServoTask */
 /**
-  * @brief  Function implementing the defaultTask thread.
+  * @brief  Function implementing the servoTask thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_StartDefaultTask */
-__weak void StartDefaultTask(void *argument)
+/* USER CODE END Header_StartServoTask */
+__weak void StartServoTask(void *argument)
 {
-  /* USER CODE BEGIN StartDefaultTask */
+  /* USER CODE BEGIN StartServoTask */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END StartDefaultTask */
+  /* USER CODE END StartServoTask */
 }
 
-/* USER CODE BEGIN Header_StartControllerTask */
+/* USER CODE BEGIN Header_StartSensorTask */
 /**
-* @brief Function implementing the controllerTask thread.
+* @brief Function implementing the sensorTask thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartControllerTask */
-__weak void StartControllerTask(void *argument)
+/* USER CODE END Header_StartSensorTask */
+__weak void StartSensorTask(void *argument)
 {
-  /* USER CODE BEGIN StartControllerTask */
+  /* USER CODE BEGIN StartSensorTask */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END StartControllerTask */
+  /* USER CODE END StartSensorTask */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -1,7 +1,0 @@
-cmake-build-debug
-Drivers
-Middlewares
-.idea
-*.ld
-.*project
-CMakeLists_*

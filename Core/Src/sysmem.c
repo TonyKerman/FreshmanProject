@@ -10,7 +10,7 @@
  ******************************************************************************
  * @attention
  *
- * Copyright (c) 2022 STMicroelectronics.
+ * Copyright (c) 2023 STMicroelectronics.
  * All rights reserved.
  *
  * This software is licensed under terms that can be found in the LICENSE file
@@ -45,9 +45,9 @@ static uint8_t *__sbrk_heap_end = NULL;
  * The '_Min_Stack_Size' linker symbol reserves a memory for the MSP stack
  * The implementation considers '_estack' linker symbol to be RAM end
  * NOTE: If the MSP stack, at any point during execution, grows larger than the
- * reserved length, please increase the '_Min_Stack_Size'.
+ * reserved size, please increase the '_Min_Stack_Size'.
  *
- * @param incr Memory length
+ * @param incr Memory size
  * @return Pointer to allocated memory
  */
 void *_sbrk(ptrdiff_t incr)
