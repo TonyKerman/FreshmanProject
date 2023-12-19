@@ -4,6 +4,7 @@
 #include "cmsis_os.h"
 #include "USER_main.h"
 #include "usart.h"
+#include "tim.h"
 #include "Serial_Servo.h"
 #include "mapping.h"
 #include "Mpu6050.h"
@@ -27,6 +28,7 @@ static inline void arm_enable_executor();
 void StartServoTask(void *argument)
 {
     arm_mode = ARM_ENABLE;
+
     for (int i = 0; i < SERVO_NUM; i++) {
         Servo[i] = Serial_Servo_Create(&huart2,i+1);
         Serial_Servo_SetLoadOrUnload(Servo[i],1);

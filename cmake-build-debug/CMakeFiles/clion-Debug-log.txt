@@ -1,4 +1,12 @@
-/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/259/bin/ninja/linux/x64/ninja -DCMAKE_C_COMPILER=/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/bin/arm-none-eabi-g++ -G Ninja -S /home/tony/2STM32workspace/projects/FreshmanProject-stm32 -B /home/tony/2STM32workspace/projects/FreshmanProject-stm32/cmake-build-debug
+/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/260/bin/ninja/linux/x64/ninja -DCMAKE_C_COMPILER=/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/bin/arm-none-eabi-g++ -G Ninja -S /home/tony/2STM32workspace/projects/FreshmanProject-stm32 -B /home/tony/2STM32workspace/projects/FreshmanProject-stm32/cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done (0.0s)
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= /bin/arm-none-eabi-gcc
+CMAKE_CXX_COMPILER= /bin/arm-none-eabi-g++
+
 -- The C compiler identification is GNU 12.2.1
 -- The CXX compiler identification is GNU 12.2.1
 -- The ASM compiler identification is GNU
@@ -14,6 +22,6 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Minimal optimization, debug info included
--- Configuring done (0.3s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/tony/2STM32workspace/projects/FreshmanProject-stm32/cmake-build-debug

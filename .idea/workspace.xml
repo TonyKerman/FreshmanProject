@@ -21,252 +21,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8beec6e9-bf06-4f1a-982f-4305d7b8952e" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/../../EideProjects/eide-demo-1/.eide/eide.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../EideProjects/eide-demo-1/.eide/eide.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../EideProjects/eide-demo-1/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../EideProjects/eide-demo-1/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/Serial_servo/Serial_Servo.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mylibs/Serial_servo/Serial_Servo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/Serial_servo/Serial_Servo.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mylibs/Serial_servo/Serial_Servo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/checksum.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/common.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_actuator_control_target.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_actuator_output_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_adsb_vehicle.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_ais_vessel.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_altitude.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_att_pos_mocap.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_attitude.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_attitude_quaternion.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_attitude_quaternion_cov.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_attitude_target.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_auth_key.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_autopilot_state_for_gimbal_device.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_autopilot_version.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_battery_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_button_change.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_capture_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_fov_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_image_captured.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_information.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_settings.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_tracking_geo_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_tracking_image_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_camera_trigger.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_can_filter_modify.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_can_frame.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_canfd_frame.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_cellular_config.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_cellular_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_change_operator_control.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_change_operator_control_ack.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_collision.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_command_ack.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_command_cancel.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_command_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_command_long.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_component_information.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_component_metadata.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_control_system_state.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_current_event_sequence.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_data_stream.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_data_transmission_handshake.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_debug.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_debug_float_array.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_debug_vect.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_distance_sensor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_efi_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_encapsulated_data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_esc_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_esc_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_estimator_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_event.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_extended_sys_state.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_fence_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_file_transfer_protocol.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_flight_information.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_follow_target.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_generator_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_device_attitude_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_device_information.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_device_set_attitude.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_manager_information.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_manager_set_attitude.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_manager_set_manual_control.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_manager_set_pitchyaw.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gimbal_manager_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_global_position_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_global_position_int_cov.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_global_vision_position_estimate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps2_raw.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps2_rtk.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps_global_origin.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps_inject_data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps_input.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps_raw_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps_rtcm_data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps_rtk.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_gps_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_high_latency.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_high_latency2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_highres_imu.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_actuator_controls.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_controls.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_gps.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_optical_flow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_rc_inputs_raw.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_sensor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_state.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hil_state_quaternion.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_home_position.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_hygrometer_sensor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_isbd_link_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_landing_target.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_link_node_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_local_position_ned.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_local_position_ned_cov.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_local_position_ned_system_global_offset.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_log_data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_log_entry.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_log_erase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_log_request_data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_log_request_end.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_log_request_list.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_logging_ack.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_logging_data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_logging_data_acked.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mag_cal_report.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_manual_control.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_manual_setpoint.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_memory_vect.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_message_interval.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_ack.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_clear_all.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_count.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_current.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_item.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_item_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_item_reached.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_request.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_request_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_request_list.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_request_partial_list.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_set_current.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mission_write_partial_list.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_mount_orientation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_named_value_float.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_named_value_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_nav_controller_output.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_obstacle_distance.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_odometry.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_onboard_computer_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_arm_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_authentication.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_basic_id.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_location.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_message_pack.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_operator_id.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_self_id.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_system.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_open_drone_id_system_update.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_optical_flow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_optical_flow_rad.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_orbit_execution_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_ext_ack.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_ext_request_list.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_ext_request_read.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_ext_set.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_ext_value.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_map_rc.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_request_list.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_request_read.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_set.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_param_value.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_ping.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_play_tune.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_play_tune_v2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_position_target_global_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_position_target_local_ned.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_power_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_radio_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_raw_imu.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_raw_pressure.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_raw_rpm.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_rc_channels.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_rc_channels_override.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_rc_channels_raw.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_rc_channels_scaled.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_request_data_stream.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_request_event.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_resource_request.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_response_event_error.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_safety_allowed_area.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_safety_set_allowed_area.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_scaled_imu.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_scaled_imu2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_scaled_imu3.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_scaled_pressure.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_scaled_pressure2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_scaled_pressure3.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_serial_control.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_servo_output_raw.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_set_actuator_control_target.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_set_attitude_target.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_set_gps_global_origin.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_set_home_position.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_set_mode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_set_position_target_global_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_set_position_target_local_ned.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_setup_signing.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_sim_state.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_smart_battery_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_statustext.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_storage_information.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_supported_tunes.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_sys_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_system_time.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_terrain_check.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_terrain_data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_terrain_report.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_terrain_request.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_time_estimate_to_target.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_timesync.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_trajectory_representation_bezier.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_trajectory_representation_waypoints.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_tunnel.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_uavcan_node_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_uavcan_node_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_utm_global_position.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_v2_extension.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_vfr_hud.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_vibration.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_vicon_position_estimate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_video_stream_information.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_video_stream_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_vision_position_estimate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_vision_speed_estimate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_wheel_distance.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_wifi_config_ap.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_winch_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/mavlink_msg_wind_cov.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/testsuite.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/common/version.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/mavlink_conversions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/mavlink_get_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/mavlink_helpers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/mavlink_sha256.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/mavlink_types.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/minimal/mavlink.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/minimal/mavlink_msg_heartbeat.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/minimal/mavlink_msg_protocol_version.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/minimal/minimal.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/minimal/testsuite.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/minimal/version.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/protocol.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/standard/mavlink.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/standard/standard.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/standard/testsuite.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mylibs/mavlink/standard/version.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32_Libs" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32_Libs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../notebooks/FreeRTOS/FreeRTOS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FreshmanProject-stm32(f411)" beforeDir="false" afterPath="$PROJECT_DIR$/../FreshmanProject-stm32(f411)" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FreshmanProject-stm32.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/FreshmanProject-stm32.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UC/USER_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/UC/USER_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-e7d398c0c442fb5706c3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-037c32ce0edd7fa14732.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c2ed9508bf0e708d1736.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-10T05-17-37-0814.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-FreshmanProject-stm32.elf-Debug-41d9371b5d06c2c438d9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeASMCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.0/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.0/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/i2c.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/stm32f4xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/stm32f4xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/syscalls.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/syscalls.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/sysmem.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/sysmem.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/system_stm32f4xx.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/system_stm32f4xx.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/Src/usart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/ThreadSafe/newlib_lock_glue.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Core/ThreadSafe/newlib_lock_glue.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/Mpu6050.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/Mpu6050.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/Serial_Servo.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/Serial_Servo.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/USER_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/USER_main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/mapping.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/mapping.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/moving_average_filter.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/moving_average_filter.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/retarget.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/retarget.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/sys_delay.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FreshmanProject-stm32.elf.dir/UC/sys_delay.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FreshmanProject-stm32.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rc2024/RC24_R2_v1_stm32" beforeDir="false" afterPath="$PROJECT_DIR$/../rc2024/RC24_R2_v1_stm32" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rc2024/_RC24_r2_arm_test" beforeDir="false" afterPath="$PROJECT_DIR$/../rc2024/_RC24_r2_arm_test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rc2024/r1_getplant_test_01_stm/WTR_micro_ros_stm32cubemx_utils" beforeDir="false" afterPath="$PROJECT_DIR$/../rc2024/r1_getplant_test_01_stm/WTR_micro_ros_stm32cubemx_utils" afterDir="false" />
@@ -281,7 +125,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -360,6 +204,9 @@
       <workItem from="1702185654188" duration="3972000" />
       <workItem from="1702189650123" duration="7579000" />
       <workItem from="1702386230189" duration="5616000" />
+      <workItem from="1702619765220" duration="608000" />
+      <workItem from="1702807705624" duration="6598000" />
+      <workItem from="1702870488366" duration="1289000" />
     </task>
     <servers />
   </component>
