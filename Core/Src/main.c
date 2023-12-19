@@ -47,7 +47,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -94,10 +93,12 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_TIM3_Init();
+  MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
   RetargetInit(&huart1);
   HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_1);
   __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,125);
+
   /* USER CODE END 2 */
 
   /* Init scheduler */

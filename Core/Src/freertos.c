@@ -103,7 +103,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* creation of servoTask */
-  servoTaskHandle = osThreadNew(StartServoTask, NULL, &servoTask_attributes);
+  //servoTaskHandle = osThreadNew(StartServoTask, NULL, &servoTask_attributes);
 
   /* creation of sensorTask */
   sensorTaskHandle = osThreadNew(StartSensorTask, NULL, &sensorTask_attributes);

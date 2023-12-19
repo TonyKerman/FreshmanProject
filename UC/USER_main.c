@@ -19,6 +19,14 @@ mapping_param_t servo_mapping[SERVO_NUM];
 float flitered_gyro[2];
 MovingAverageFilter mpu_roll_filter;
 MovingAverageFilter mpu_pitch_filter;
+uint8_t uart6_rxbuf[10];
+uint8_t uart6_rxindex=0;
+
+union v16{
+    int16_t int16;
+    uint8_t uint8[2];
+}object_xy[2];
+
 
 static inline void Servos_ReadPos();
 static inline void arm_disable_executor();
@@ -90,6 +98,7 @@ void StartSensorTask(void *argument)
 {
     float last_roll=0;
     float last_pitch=0;
+    HAL_UART_Receive_IT(&huart6,uart6_rxbuf,5);
     while (Mpu6050_Init(&mpu1,&hi2c1,0,Afsr_2g,Gfsr_250LSB,50)!=0)
     {
         HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
@@ -150,3 +159,28 @@ static inline void arm_enable_executor()
     }
 }
 
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if(huart->Instance==USART6)
+    {
+
+        if(uart6_rxbuf[uart6_rxindex]==0x33)
+        {
+            if(uart6_rxindex>=4)
+            {
+                *(uart6_rxbuf-4) = object_xy[0].uint8[0];
+                *(uart6_rxbuf-3) = object_xy[0].uint8[1];
+                *(uart6_rxbuf-2) = object_xy[1].uint8[0];
+                *(uart6_rxbuf-1) = object_xy[0].uint8[1];
+                HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+                uart6_rxindex=0;
+            }
+            uart6_rxindex+=1;
+            if(uart6_rxindex>9)
+                uart6_rxindex=0;
+        }
+
+        HAL_UART_Receive_IT(&huart6,uart6_rxbuf+uart6_rxindex,5);
+    }
+
+}
